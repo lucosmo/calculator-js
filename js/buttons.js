@@ -6,9 +6,13 @@ const screen = document.getElementsByClassName('screen')[0];
 });*/
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
+      if(e.target.value=='='){
+        screen.innerHTML= ( eval(screen.innerHTML));
+      }
+      else
         screen.innerHTML+= ( e.target.value );
     } );
-    
+
 });
 /*btns.forEach(btn => {
 
