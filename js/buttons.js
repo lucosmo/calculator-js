@@ -6,7 +6,10 @@ const screen = document.getElementsByClassName('screen')[0];
 });*/
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
-      if(e.target.value=='=') {
+      if(e.target.value == 'C') {
+        screen.innerHTML = "";
+      }
+      else if(e.target.value=='=') {
         screen.innerHTML= ( eval(screen.innerHTML));
       }
       else {
