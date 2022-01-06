@@ -9,6 +9,14 @@ Array.from(btns).forEach(child => {
       if(e.target.value == 'C') {
         screen.innerHTML = "";
       }
+      else if(e.target.value == 'sign') {
+        if(!isNaN(screen.innerHTML)) {
+          var number = Number(screen.innerHTML);
+          number = -number;
+          screen.innerHTML = number.toString();
+        }
+    
+      }
       else if(e.target.value=='=') {
         screen.innerHTML= ( eval(screen.innerHTML));
       }
