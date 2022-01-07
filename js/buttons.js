@@ -26,6 +26,9 @@ Array.from(btns).forEach(child => {
           screen.innerHTML = (eval(screen.innerHTML));
         }
       }
+      else if(e.target.value == 'back') {
+        screen.innerHTML = screen.innerHTML.slice(0,-1);
+      }
       else {
         screen.innerHTML+= ( e.target.value );
       }
