@@ -15,10 +15,16 @@ Array.from(btns).forEach(child => {
           number = -number;
           screen.innerHTML = number.toString();
         }
-    
+
       }
       else if(e.target.value=='=') {
-        screen.innerHTML= ( eval(screen.innerHTML));
+        if (screen.innerHTML.includes(".")) {
+          var x = (eval(screen.innerHTML));
+          screen.innerHTML = x.toPrecision(screen.innerHTML.split(".")[1].length).toString();
+        }
+        else {
+          screen.innerHTML = (eval(screen.innerHTML));
+        }
       }
       else {
         screen.innerHTML+= ( e.target.value );
