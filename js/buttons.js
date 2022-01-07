@@ -4,6 +4,7 @@ const screen = document.getElementsByClassName('screen')[0];
 [...btns.children].forEach(element => {
     console.log(element);
 });*/
+let historyInput = [];
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
       if(e.target.value == 'C') {
@@ -18,6 +19,8 @@ Array.from(btns).forEach(child => {
 
       }
       else if(e.target.value=='=') {
+        historyInput.push(e.target.value);
+        console.log(historyInput);
         if (screen.innerHTML.includes(".")) {
           var x = (eval(screen.innerHTML));
           screen.innerHTML = x.toPrecision(screen.innerHTML.split(".")[1].length).toString();
@@ -30,7 +33,9 @@ Array.from(btns).forEach(child => {
         screen.innerHTML = screen.innerHTML.slice(0,-1);
       }
       else {
-        screen.innerHTML+= ( e.target.value );
+        screen.innerHTML += ( e.target.value );
+        historyInput.push(e.target.value);
+        console.log(historyInput);
       }
     } );
 
