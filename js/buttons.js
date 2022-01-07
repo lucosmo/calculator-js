@@ -30,7 +30,16 @@ Array.from(btns).forEach(child => {
         }
       }
       else if(e.target.value == 'back') {
-        screen.innerHTML = screen.innerHTML.slice(0,-1);
+        if(historyInput[historyInput.length-1] == '=') {
+          while(historyInput[historyInput.length-1] == '=') {
+            historyInput.pop();
+          }
+        } else {
+          historyInput.pop();
+        }
+
+
+        screen.innerHTML = historyInput.join("");
       }
       else {
         screen.innerHTML += ( e.target.value );
