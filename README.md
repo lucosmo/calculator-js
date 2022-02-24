@@ -1,10 +1,10 @@
 # calculator-js
 <h3><b>HTML/CSS/JS calculator application</b></h3>
 Calculator app does the following math operations:<br>
-addition
-subtraction
-multiplication
-division
+addition<br>
+subtraction<br>
+multiplication<br>
+division<br>
 
 
 <br><br>
