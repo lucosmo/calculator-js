@@ -4,7 +4,11 @@ Calculator app does the following math operations:<br>
 addition<br>
 subtraction<br>
 multiplication<br>
-division<br>
+division<br><br>
+Technology stack:<br>
+HTML<br>
+CSS<br>
+Vanilla JavaScript 
 
 
 <br><br>
