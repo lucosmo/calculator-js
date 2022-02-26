@@ -45,8 +45,10 @@ Array.from(btns).forEach(child => {
           screen.innerHTML = historyInput.join("");*/
           historyInput = historyInput.slice(0,-2);
           let lastOperation = historyInput.join("").match(re);
-          
+
+          historyInput = historyInput.slice(0,-lastOperation[0].length+1);
           screen.innerHTML = lastOperation[0];
+          console.log(historyInput);
           break;
         default:
           screen.innerHTML += ( e.target.value );
