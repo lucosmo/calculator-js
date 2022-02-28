@@ -50,7 +50,7 @@ Array.from(btns).forEach(child => {
           screen.innerHTML = lastOperation[0];
           console.log(historyInput);
           break;
-        case '%':
+        case 'percent':
           if(!isNaN(screen.innerHTML)) {
             var number = Number(screen.innerHTML);
             number = number/100;
