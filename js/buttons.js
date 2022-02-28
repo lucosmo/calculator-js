@@ -50,6 +50,13 @@ Array.from(btns).forEach(child => {
           screen.innerHTML = lastOperation[0];
           console.log(historyInput);
           break;
+        case '%':
+          if(!isNaN(screen.innerHTML)) {
+            var number = Number(screen.innerHTML);
+            number = number/100;
+            screen.innerHTML = number.toString();
+          }
+          break;
         default:
           screen.innerHTML += ( e.target.value );
           historyInput.push(e.target.value);
