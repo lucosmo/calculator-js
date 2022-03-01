@@ -7,6 +7,12 @@ const screen = document.getElementsByClassName('screen')[0];
 let historyInput = [];
 const re = /([^\=]+$)/;
 
+const takeLastNumber = s => {
+  const reMath = /([^\+\-\*\/]+$)/;
+  const reMath2 = /.*(\d)$/
+  return s.match(reMath);
+};
+
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
       switch(e.target.value) {
@@ -50,11 +56,17 @@ Array.from(btns).forEach(child => {
           screen.innerHTML = lastOperation[0];
           console.log(historyInput);
           break;
-        case 'percent':
+        case '%':
+
+          console.log(takeLastNumber(screen.innerHTML));
           if(!isNaN(screen.innerHTML)) {
-            var number = Number(screen.innerHTML);
-            number = number/100;
-            screen.innerHTML = number.toString();
+
+
+            let x = takeLastNumber(screen.innerHTML)[0];
+            screen.innerHTML = (screen.innerHTML).replace(x,'');
+            console.log("last: "+takeLastNumber(screen.innerHTML)[0]);
+            number = Number(x)/100;
+            screen.innerHTML += number.toString();
           }
           break;
         default:
@@ -63,6 +75,7 @@ Array.from(btns).forEach(child => {
           console.log(historyInput);
           break;
       }
+
       /*
 
       if(e.target.value == 'C') {
