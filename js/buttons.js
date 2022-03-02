@@ -7,6 +7,15 @@ const screen = document.getElementsByClassName('screen')[0];
 let historyInput = [];
 const re = /([^\=]+$)/;
 
+/**
+  * Function takes string as argument, matches regex rule against argument
+  * and returns result.
+  *
+  * @param {string} s Calculator output (screen)
+  *
+  * @return {array} Return array as matched regex
+  * @return {null} If regex isn't matched
+  */
 const takeLastNumber = s => {
   const reMath = /([^\+\-\*\/]+$)/;
   const reMath2 = /.*(\d)$/
