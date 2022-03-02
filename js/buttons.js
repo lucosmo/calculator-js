@@ -57,14 +57,9 @@ Array.from(btns).forEach(child => {
           console.log(historyInput);
           break;
         case '%':
-
-          console.log(takeLastNumber(screen.innerHTML));
-          if(!isNaN(screen.innerHTML)) {
-
-
+          if(screen.innerHTML || screen.innerHTML.length !== 0) {
             let x = takeLastNumber(screen.innerHTML)[0];
             screen.innerHTML = (screen.innerHTML).replace(x,'');
-            console.log("last: "+takeLastNumber(screen.innerHTML)[0]);
             number = Number(x)/100;
             screen.innerHTML += number.toString();
           }
