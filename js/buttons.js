@@ -18,6 +18,7 @@ Array.from(btns).forEach(child => {
       switch(e.target.value) {
         case 'C':
           screen.innerHTML = "";
+          historyInput = [];
           break;
         case 'sign':
           if(!isNaN(screen.innerHTML)) {
@@ -64,6 +65,10 @@ Array.from(btns).forEach(child => {
             screen.innerHTML += number.toString();
           }
           break;
+        case '*':
+        case '/':
+        case '+':
+        case '-':
         default:
           screen.innerHTML += ( e.target.value );
           historyInput.push(e.target.value);
