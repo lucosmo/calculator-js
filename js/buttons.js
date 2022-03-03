@@ -41,7 +41,7 @@ Array.from(btns).forEach(child => {
           historyInput = [];
           break;
         case 'sign':
-          if(!isNaN(screen.innerHTML))&& {
+          if((!isNaN(screen.innerHTML))&&(isNumeric(screen.innerHTML))) {
             var number = Number(screen.innerHTML);
             number = -number;
             screen.innerHTML = number.toString();
