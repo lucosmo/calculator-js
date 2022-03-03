@@ -22,6 +22,17 @@ const takeLastNumber = s => {
   return s.match(reMath);
 };
 
+/**
+  * Function takes string as argument, checks if string is numeric.
+  *
+  * @param {string} s Calculator output (screen)
+  *
+  * @return {bool} Returns true if s is numeric, false if s is not numeric
+  */
+function isNumeric(s) {
+  return !isNaN(parseFloat(s)) && isFinite(s);
+}
+
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
       switch(e.target.value) {
@@ -30,7 +41,7 @@ Array.from(btns).forEach(child => {
           historyInput = [];
           break;
         case 'sign':
-          if(!isNaN(screen.innerHTML)) {
+          if(!isNaN(screen.innerHTML))&& {
             var number = Number(screen.innerHTML);
             number = -number;
             screen.innerHTML = number.toString();
