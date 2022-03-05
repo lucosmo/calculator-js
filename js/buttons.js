@@ -5,6 +5,9 @@ const screen = document.getElementsByClassName('screen')[0];
     console.log(element);
 });*/
 let historyInput = [];
+/*
+ * Regular expression for searching for equal (=) sign in history of pressed buttons
+ */
 const re = /([^\=]+$)/;
 
 /**
