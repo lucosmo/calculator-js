@@ -5,6 +5,7 @@ Calculator app does the following math operations:<br>
 - subtraction<br>
 - multiplication<br>
 - division<br><br>
+- percent<br><br>
 Technology stack:<br>
 - HTML<br>
 - CSS<br>
