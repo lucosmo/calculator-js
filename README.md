@@ -5,7 +5,9 @@ Calculator app does the following math operations:<br>
 - subtraction<br>
 - multiplication<br>
 - division<br><br>
-- percent<br><br>
+- percent<br>
+- sign change (positive/negative number)<br>
+- undo operations<br><br><br>
 Technology stack:<br>
 - HTML<br>
 - CSS<br>
