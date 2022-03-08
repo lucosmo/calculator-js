@@ -1,19 +1,18 @@
 # calculator-js
-<h3><b>HTML/CSS/JS calculator application</b></h3>
-Calculator app does the following math operations:<br>
-- addition<br>
-- subtraction<br>
-- multiplication<br>
-- division<br><br>
-- percent<br>
-- sign change (positive/negative number)<br>
-- undo operations<br><br><br>
-Technology stack:<br>
-- HTML<br>
-- CSS<br>
+## HTML/CSS/JS calculator application
+### Calculator app does the following math operations:
+- [x] addition
+- [x] subtraction
+- [x] multiplication
+- [x] division
+- [x] percent
+### Additional features:
+- [x] sign change (positive/negative number)
+- [ ] undo operations
+### Technology stack:<br>
+- HTML
+- CSS
 - Vanilla JavaScript 
 
-
-<br><br>
-Live:
+### Live:
 https://lucosmo.github.io/calculator-js/
