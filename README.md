@@ -1,6 +1,6 @@
 # calculator-js
 ## HTML/CSS/JS calculator application
-### Calculator app does the following math operations:
+### Calculator does the following math operations:
 - [x] addition
 - [x] subtraction
 - [x] multiplication
@@ -9,7 +9,7 @@
 ### Additional features:
 - [x] sign change (positive/negative number)
 - [ ] undo operations
-### Technology stack:<br>
+### Technology stack:
 - HTML
 - CSS
 - Vanilla JavaScript 
