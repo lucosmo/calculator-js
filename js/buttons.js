@@ -36,6 +36,7 @@ function isNumeric(s) {
   return !isNaN(parseFloat(s)) && isFinite(s);
 }
 
+
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
       switch(e.target.value) {
@@ -143,3 +144,7 @@ Array.from(btns).forEach(child => {
     } );
 
 });
+module.exports = {
+  takeLastNumber,
+  isNumeric
+};
