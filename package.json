@@ -3,6 +3,7 @@
     "jest": "^27.5.1"
   },
   "scripts": {
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "coverage": "jest --env=jsdom --coverage"
   }
 }
