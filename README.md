@@ -13,6 +13,7 @@
 - HTML
 - CSS
 - Vanilla JavaScript 
+- Jest
 
 ### Live:
 https://lucosmo.github.io/calculator-js/
