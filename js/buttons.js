@@ -1,3 +1,5 @@
+import {clean_screen} from './button_logic.js';
+
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
 /*
@@ -19,7 +21,7 @@ const re = /([^\=]+$)/;
   * @return {array} Return array as matched regex
   * @return {null} If regex isn't matched
   */
-const takeLastNumber = s => {
+export const takeLastNumber = s => {
   const reMath = /([^\+\-\*\/]+$)/;
   const reMath2 = /.*(\d)$/
   return s.match(reMath);
@@ -32,17 +34,35 @@ const takeLastNumber = s => {
   *
   * @return {bool} Returns true if s is numeric, false if s is not numeric
   */
-function isNumeric(s) {
+export function isNumeric(s) {
   return !isNaN(parseFloat(s)) && isFinite(s);
 }
+
+/**
+  * Function takes string and array as arguments, creates object containing these arguments.
+  *
+  * @param {string} calculator_screen Calculator output (screen)
+  * @param {array} calculator_history Calculator's history of pressed buttons
+  * @return {bool} Returns true if s is numeric, false if s is not numeric
+  */
+function CalculatorData(calculator_screen, calculator_history){
+  this.screen = calculator_screen;
+  this.history = calculator_history;
+}
+
 
 
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
+      const calculatorData = new CalculatorData(screen.innerHTML,historyInput)
       switch(e.target.value) {
         case 'C':
+          const result = clean_screen(calculatorData);
+          screen.innerHTML = result.screen;
+          historyInput = result.history;
+          /*
           screen.innerHTML = "";
-          historyInput = [];
+          historyInput = [];*/
           break;
         case 'sign':
           if((!isNaN(screen.innerHTML))&&(isNumeric(screen.innerHTML))) {
@@ -144,7 +164,9 @@ Array.from(btns).forEach(child => {
     } );
 
 });
+/*
 module.exports = {
   takeLastNumber,
   isNumeric
-};
+};*/
+export default {takeLastNumber, isNumeric}
