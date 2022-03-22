@@ -1,7 +1,7 @@
 # calculator-js
 
 ![Under Development](https://img.shields.io/badge/under-development-orange.svg)
-## HTML/CSS/JS calculator application
+## HTML/CSS/JavaScript calculator application
 ### Calculator does the following math operations:
 - [x] addition
 - [x] subtraction
