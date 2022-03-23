@@ -27,16 +27,6 @@ export const takeLastNumber = s => {
   return s.match(reMath);
 };
 
-/**
-  * Function takes string as argument, checks if string is numeric.
-  *
-  * @param {string} s Calculator output (screen)
-  *
-  * @return {bool} Returns true if s is numeric, false if s is not numeric
-  */
-export function isNumeric(s) {
-  return !isNaN(parseFloat(s)) && isFinite(s);
-}
 
 /**
   * Function takes string and array as arguments, creates object containing these arguments.
@@ -49,7 +39,6 @@ function CalculatorData(calculator_screen, calculator_history){
   this.screen = calculator_screen;
   this.history = calculator_history;
 }
-
 
 
 Array.from(btns).forEach(child => {
@@ -65,11 +54,13 @@ Array.from(btns).forEach(child => {
           historyInput = [];*/
           break;
         case 'sign':
+
+        /*
           if((!isNaN(screen.innerHTML))&&(isNumeric(screen.innerHTML))) {
             var number = Number(screen.innerHTML);
             number = -number;
             screen.innerHTML = number.toString();
-          }
+          }*/
           break;
         case '=':
           historyInput.push(e.target.value);
