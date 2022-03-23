@@ -1,4 +1,4 @@
-import {clean_screen} from './button_logic.js';
+import {clean_screen, change_sign} from './button_logic.js';
 
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
@@ -54,13 +54,14 @@ Array.from(btns).forEach(child => {
           historyInput = [];*/
           break;
         case 'sign':
-
+          change_sign(calculatorData);
         /*
           if((!isNaN(screen.innerHTML))&&(isNumeric(screen.innerHTML))) {
             var number = Number(screen.innerHTML);
             number = -number;
             screen.innerHTML = number.toString();
           }*/
+
           break;
         case '=':
           historyInput.push(e.target.value);
