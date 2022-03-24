@@ -9,6 +9,7 @@ export const clean_screen = calculatorData => {
   return calculatorData;
 }
 
+
 export const change_sign = calculatorData => {
   if(isNumeric(calculatorData.screen)){
     let number = Number(calculatorData.screen);

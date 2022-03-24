@@ -54,7 +54,7 @@ Array.from(btns).forEach(child => {
           historyInput = [];*/
           break;
         case 'sign':
-          change_sign(calculatorData);
+          screen.innerHTML = (change_sign(calculatorData)).screen;
         /*
           if((!isNaN(screen.innerHTML))&&(isNumeric(screen.innerHTML))) {
             var number = Number(screen.innerHTML);
@@ -161,4 +161,4 @@ module.exports = {
   takeLastNumber,
   isNumeric
 };*/
-export default {takeLastNumber, isNumeric}
+export default {takeLastNumber}
