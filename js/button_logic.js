@@ -1,5 +1,6 @@
 import {isNumeric} from './helpers.js'
 /**
+ * Function takes current values of calculator screen and history of operations as object calculatorData, sets them empty and returns the object 
  *
  * @param {object} Object containing screen's html and history of clicked buttons
  * @return {object} Returns modified object with reset values
