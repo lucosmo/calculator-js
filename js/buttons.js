@@ -1,4 +1,5 @@
 import {clean_screen, change_sign} from './button_logic.js';
+import {takeLastNumber} from './helpers.js';
 
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
@@ -84,7 +85,7 @@ Array.from(btns).forEach(child => {
           if(screen.innerHTML || screen.innerHTML.length !== 0) {
             let x = takeLastNumber(screen.innerHTML)[0];
             screen.innerHTML = (screen.innerHTML).replace(x,'');
-            number = Number(x)/100;
+            let number = Number(x)/100;
             screen.innerHTML += number.toString();
           }
           break;
@@ -148,4 +149,3 @@ module.exports = {
   takeLastNumber,
   isNumeric
 };*/
-export default {takeLastNumber}
