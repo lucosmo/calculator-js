@@ -12,6 +12,9 @@ export const clean_screen = calculatorData => {
 }
 
 /**
+ * Function changes sign of the number visible on the screen:
+ * 3 becomes -3
+ * -4 becomes 4
  *
  * @param {object} Object containing screen's html and history of clicked buttons
  * @return {object} Returns modified object with changed sign (-/+) of number (object.screen)
@@ -23,4 +26,24 @@ export const clean_screen = calculatorData => {
     calculatorData.screen = number.toString();
   }
   return calculatorData;
+  }
+
+/**
+ * Function evaluates math operations visible on the screen of the calculator
+ *
+ * @param {object} Object containing screen's html and history of clicked buttons
+ * @return {object} Returns modified object with result of the math operation and updated history
+*/
+  export const calc_evaluation = calculatorData => {
+    calculatorData.history.push(e.target.value);
+    if (calculatorData.screen.includes(".")) {
+      let x = (eval(calculatorData.screen));
+      calculatorData.screen = x.toPrecision(calculatorData.screen.split(".")[1].length).toString();
+      calculatorData.history.push(calculatorData.screen);
+    }
+    else {
+      calculatorData.screen = (eval(calculatorData.screen));
+      calculatorData.history.push(calculatorData.screen);
+    }
+    return calculatorData;
   }

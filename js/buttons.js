@@ -1,4 +1,4 @@
-import {clean_screen, change_sign} from './button_logic.js';
+import {clean_screen, change_sign, calc_evaluation} from './button_logic.js';
 import {takeLastNumber} from './helpers.js';
 
 const btns = document.getElementsByClassName('btn');
@@ -52,6 +52,10 @@ Array.from(btns).forEach(child => {
 
           break;
         case '=':
+          let output = calc_evaluation(calculatorData);
+          screen.innerHTML = output.screen;
+          historyInput = output.history;
+          /*
           historyInput.push(e.target.value);
           console.log(historyInput);
           if (screen.innerHTML.includes(".")) {
@@ -63,7 +67,7 @@ Array.from(btns).forEach(child => {
             screen.innerHTML = (eval(screen.innerHTML));
             historyInput.push(screen.innerHTML);
           }
-          console.log(historyInput);
+          console.log(historyInput);*/
           break;
         case 'back':
           /*if(historyInput[historyInput.length-1] == '=') {
