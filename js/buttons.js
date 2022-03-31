@@ -52,7 +52,7 @@ Array.from(btns).forEach(child => {
 
           break;
         case '=':
-          let output = calc_evaluation(calculatorData);
+          let output = calc_evaluation(calculatorData,e);
           screen.innerHTML = output.screen;
           historyInput = output.history;
           /*

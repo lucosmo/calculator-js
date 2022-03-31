@@ -34,7 +34,7 @@ export const clean_screen = calculatorData => {
  * @param {object} Object containing screen's html and history of clicked buttons
  * @return {object} Returns modified object with result of the math operation and updated history
 */
-  export const calc_evaluation = calculatorData => {
+  export const calc_evaluation = (calculatorData, e) => {
     calculatorData.history.push(e.target.value);
     if (calculatorData.screen.includes(".")) {
       let x = (eval(calculatorData.screen));
