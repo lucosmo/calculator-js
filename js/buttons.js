@@ -1,4 +1,4 @@
-import {clean_screen, change_sign, calc_evaluation} from './button_logic.js';
+import {clean_screen, change_sign, calc_evaluation, calc_percent} from './button_logic.js';
 import {takeLastNumber} from './helpers.js';
 
 const btns = document.getElementsByClassName('btn');
@@ -86,12 +86,7 @@ Array.from(btns).forEach(child => {
           console.log(historyInput);
           break;
         case '%':
-          if(screen.innerHTML || screen.innerHTML.length !== 0) {
-            let x = takeLastNumber(screen.innerHTML)[0];
-            screen.innerHTML = (screen.innerHTML).replace(x,'');
-            let number = Number(x)/100;
-            screen.innerHTML += number.toString();
-          }
+          screen.innerHTML = calc_percent(calculatorData).screen;
           break;
         case '*':
         case '/':
