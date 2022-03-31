@@ -11,12 +11,14 @@
 ### Additional features:
 - [x] sign change (positive/negative number)
 - [ ] undo operations
+### TODO:
+- [ ] dealing with floating point number precision
 ### Technology stack:
 - HTML
 - CSS
-- Vanilla JavaScript 
+- Vanilla JavaScript
 - Jest as testing tool https://jestjs.io/ working on the top of NodeJS
-- Babel to translate JS code to meet Jest requirements 
+- Babel to translate JS code to meet Jest requirements
 
 ### Live:
 https://lucosmo.github.io/calculator-js/
