@@ -36,14 +36,11 @@ export const clean_screen = calculatorData => {
 */
   export const calc_evaluation = (calculatorData, e) => {
     calculatorData.history.push(e.target.value);
-    if (calculatorData.screen.includes(".")) {
-      let x = (eval(calculatorData.screen));
-      calculatorData.screen = x.toPrecision(calculatorData.screen.split(".")[1].length).toString();
-      calculatorData.history.push(calculatorData.screen);
-    }
-    else {
-      calculatorData.screen = (eval(calculatorData.screen));
-      calculatorData.history.push(calculatorData.screen);
-    }
+    calculatorData.screen = (eval(calculatorData.screen));
+    calculatorData.history.push(calculatorData.screen);
+    /*
+      FLOAT DOUBLE PRECISION TO BE FIXED
+    */
+
     return calculatorData;
   }
