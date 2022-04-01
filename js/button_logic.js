@@ -65,3 +65,7 @@ export const clean_screen = calculatorData => {
       }
       return calculatorData;
   }
+
+  export const calc_back = calculatorData => {
+    return calculatorData;
+  }
