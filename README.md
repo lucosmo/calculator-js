@@ -13,6 +13,8 @@
 - [ ] undo operations
 ### TODO:
 - [ ] dealing with floating point number precision
+- [ ] improving history
+- [ ] doing proper history back
 ### Technology stack:
 - HTML
 - CSS
