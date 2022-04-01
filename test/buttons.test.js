@@ -13,3 +13,7 @@ test('check if last number in "1-dagdhj" is 1', () => {
 test('check if last number in "1+3+34fd" is 3', () => {
   expect(bfunctions.takeLastNumber("1+3+34fd")[0]).toBe('3');
 });
+let x = calculatorData("3%","3%");
+test('check if percent of 3 (3%) is 0.03', (x) => {
+  expect(bfunctions.calc_percent(x)[0]).toBe('0.03');
+});
