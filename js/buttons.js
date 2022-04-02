@@ -3,20 +3,11 @@ import {takeLastNumber, calculatorData} from './helpers.js';
 
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
-/*
-[...btns.children].forEach(element => {
-    console.log(element);
-});*/
 let historyInput = [];
 /*
  * Regular expression for searching for equal (=) sign in history of pressed buttons
  */
 const re = /([^\=]+$)/;
-
-
-
-
-
 
 Array.from(btns).forEach(child => {
     child.addEventListener('click', (e) => {
@@ -26,19 +17,9 @@ Array.from(btns).forEach(child => {
           const result = clean_screen(calculatorData);
           screen.innerHTML = result.screen;
           historyInput = result.history;
-          /*
-          screen.innerHTML = "";
-          historyInput = [];*/
           break;
         case 'sign':
           screen.innerHTML = (change_sign(calculatorData)).screen;
-        /*
-          if((!isNaN(screen.innerHTML))&&(isNumeric(screen.innerHTML))) {
-            var number = Number(screen.innerHTML);
-            number = -number;
-            screen.innerHTML = number.toString();
-          }*/
-
           break;
         case '=':
           let output = calc_evaluation(calculatorData,e);
@@ -84,47 +65,6 @@ Array.from(btns).forEach(child => {
           break;
       }
 
-      /*
-
-      if(e.target.value == 'C') {
-        screen.innerHTML = "";
-      }
-      else if(e.target.value == 'sign') {
-        if(!isNaN(screen.innerHTML)) {
-          var number = Number(screen.innerHTML);
-          number = -number;
-          screen.innerHTML = number.toString();
-        }
-
-      }
-      else if(e.target.value=='=') {
-        historyInput.push(e.target.value);
-        console.log(historyInput);
-        if (screen.innerHTML.includes(".")) {
-          var x = (eval(screen.innerHTML));
-          screen.innerHTML = x.toPrecision(screen.innerHTML.split(".")[1].length).toString();
-        }
-        else {
-          screen.innerHTML = (eval(screen.innerHTML));
-        }
-      }
-      else if(e.target.value == 'back') {
-        if(historyInput[historyInput.length-1] == '=') {
-          while(historyInput[historyInput.length-1] == '=') {
-            historyInput.pop();
-          }
-        } else {
-          historyInput.pop();
-        }
-
-
-        screen.innerHTML = historyInput.join("");
-      }
-      else {
-        screen.innerHTML += ( e.target.value );
-        historyInput.push(e.target.value);
-        console.log(historyInput);
-      }*/
     } );
 
 });
