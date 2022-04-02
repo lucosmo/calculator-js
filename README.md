@@ -14,7 +14,7 @@
 ### TODO:
 - [ ] dealing with floating point number precision
 - [ ] improving history
-- [ ] doing proper history back
+- [ ] doing proper history back (use tree structure for this?)
 ### Technology stack:
 - HTML
 - CSS
