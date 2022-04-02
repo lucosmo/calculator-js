@@ -1,5 +1,5 @@
 import {clean_screen, change_sign, calc_evaluation, calc_percent, calc_back} from './button_logic.js';
-import {takeLastNumber} from './helpers.js';
+import {takeLastNumber, calculatorData} from './helpers.js';
 
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
@@ -16,17 +16,6 @@ const re = /([^\=]+$)/;
 
 
 
-/**
-  * Function takes string and array as arguments, creates object containing these arguments.
-  *
-  * @param {string} calculator_screen Calculator output (screen)
-  * @param {array} calculator_history Calculator's history of pressed buttons
-  * @return {bool} Returns true if s is numeric, false if s is not numeric
-  */
-function CalculatorData(calculator_screen, calculator_history){
-  this.screen = calculator_screen;
-  this.history = calculator_history;
-}
 
 
 Array.from(btns).forEach(child => {
