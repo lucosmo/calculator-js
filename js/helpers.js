@@ -3,13 +3,13 @@
   *
   * @param {string} calculator_screen Calculator output (screen)
   * @param {array} calculator_history Calculator's history of pressed buttons
+  *
   * @return {bool} Returns true if s is numeric, false if s is not numeric
   */
 function CalculatorData(calculator_screen, calculator_history){
   this.screen = calculator_screen;
   this.history = calculator_history;
 }
-
 
 /**
   * Function takes string as argument, checks if string is numeric.
@@ -33,6 +33,5 @@ export function isNumeric(s) {
   */
 export const takeLastNumber = s => {
   const reMath = /([^\+\-\*\/]+$)/;
-  const reMath2 = /.*(\d)$/
   return s.match(reMath);
 };
