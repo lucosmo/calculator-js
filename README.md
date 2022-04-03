@@ -15,6 +15,7 @@
 - [ ] dealing with floating point number precision
 - [ ] improving history
 - [ ] doing proper history back (use tree structure for this?)
+- [ ] app stoppers working on github pages, need to fix it
 ### Technology stack:
 - HTML
 - CSS
