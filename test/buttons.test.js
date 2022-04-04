@@ -1,5 +1,5 @@
 //const bfunctions = require('../js/buttons');
-import * as bfunctions from './buttons.js'
+import * as bfunctions from './helper.js'
 
 test('check if last number in "1+3+34" is 34', () => {
   expect(bfunctions.takeLastNumber("1+3+34")[0]).toBe('34');
