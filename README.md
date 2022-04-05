@@ -21,7 +21,7 @@
 - CSS
 - Vanilla JavaScript
 - Jest as testing tool https://jestjs.io/ working on the top of NodeJS
-- Babel to translate JS code to meet Jest requirements
+- Babel to translate JS code to meet Jest requirements. Jest has problems with ES6 imported/exported modules.
 
 ### Live:
 https://lucosmo.github.io/calculator-js/
