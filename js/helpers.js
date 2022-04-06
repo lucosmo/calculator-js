@@ -6,7 +6,7 @@
   *
   * @return {bool} Returns true if s is numeric, false if s is not numeric
   */
-function CalculatorData(calculator_screen, calculator_history){
+export function CalculatorData(calculator_screen, calculator_history){
   this.screen = calculator_screen;
   this.history = calculator_history;
 }
