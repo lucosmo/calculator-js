@@ -22,7 +22,21 @@
 - Vanilla JavaScript
 - Jest as testing tool https://jestjs.io/ working on the top of NodeJS
 - Babel to translate JS code to meet Jest requirements. Jest has problems with ES6 imported/exported modules.
-
+### Testing instruction:
+- Add test environment to .babelrc in main folder:
+```xml
+{
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}
+```
+- install ES6 transform plugin:
+```
+npm install --save-dev @babel/plugin-transform-modules-commonjs
+```
 ### Live:
 https://lucosmo.github.io/calculator-js/
 
