@@ -14,6 +14,11 @@ test('check if last number in "1-dagdhj" is 1', () => {
 test('check if last number in "1+3+34fd" is 3', () => {
   expect(bfunctions.takeLastNumber("1+3+34fd")[0]).toBe('3');
 });
+let cd1 = CalculatorData("1+2","1+2");
+test('check if CalculatorData creates proper object', (cd1) => {
+  expect(cd1['history'].toBe('1+2');
+});
+
 let xy = bfunctions.CalculatorData("3%","3%");
 test('check if percent of 3 (3%) is 0.03', (xy) => {
   expect(bfunctions.calc_percent(xy)[0]).toBe('0.03');
