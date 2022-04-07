@@ -1,6 +1,6 @@
 //const bfunctions = require('../js/helpers.js');
 import * as bfunctions from '../js/helpers.js'
-import * as blogic from '../js/helpers.js'
+import * as blogic from '../js/button_logic.js'
 
 test('check if last number in "1+3+34" is 34', () => {
   expect(bfunctions.takeLastNumber("1+3+34")[0]).toBe('34');
