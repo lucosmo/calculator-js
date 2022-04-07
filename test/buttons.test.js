@@ -31,4 +31,17 @@ xz = bfunctions.CalculatorData("2","2");
 test('check if 2% is 0.02', (xz) => {
   expect(bfunctions.calc_percent(xz)[0]).toBe('0.02');
 });
+xz = "1234";
+test('check if "1234" is numeric', (xz) => {
+  expect(bfunctions.isNumeric(xz).toBe(true);
+});
+xz = "1234.03";
+test('check if "1234.03" is numeric', (xz) => {
+  expect(bfunctions.isNumeric(xz).toBe(true);
+});
+xz = "bhsjd1234";
+test('check if "bhsjd1234" is numeric', (xz) => {
+  expect(bfunctions.isNumeric(xz).toBe(false);
+});
+
 
