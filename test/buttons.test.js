@@ -22,3 +22,8 @@ let xz = bfunctions.CalculatorData("1+3%","1+3%");
 test('check if 1+3% is 1+0.03', (xz) => {
   expect(bfunctions.calc_percent(xz)[0]).toBe('1+0.03');
 });
+xz = bfunctions.CalculatorData("2","2");
+test('check if 2% is 0.02', (xz) => {
+  expect(bfunctions.calc_percent(xz)[0]).toBe('0.02');
+});
+
