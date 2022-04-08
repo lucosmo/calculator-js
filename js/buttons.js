@@ -1,5 +1,5 @@
 import {clean_screen, change_sign, calc_evaluation, calc_percent, calc_back} from './button_logic.js';
-import {takeLastNumber, calculatorData} from './helpers.js';
+import {takeLastNumber, CalculatorData} from './helpers.js';
 
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
