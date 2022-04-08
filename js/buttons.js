@@ -40,9 +40,9 @@ Array.from(btns).forEach(child => {
           console.log(historyInput);*/
           break;
         case 'back':
-          let output = calc_back(calculatorData);
-          screen.innerHTML = output.screen;
-          historyInput = output.history;
+          let output1 = calc_back(calculatorData);
+          screen.innerHTML = output1.screen;
+          historyInput = output1.history;
           /*
           historyInput = historyInput.slice(0,-2);
           let lastOperation = historyInput.join("").match(re);
