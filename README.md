@@ -23,6 +23,7 @@
 - Jest as testing tool https://jestjs.io/ working on the top of NodeJS
 - Babel to translate JS code to meet Jest requirements. Jest has problems with ES6 imported/exported modules.
 ### Testing instruction:
+Installing jest
 - Add test environment to .babelrc in main folder:
 ```xml
 {
