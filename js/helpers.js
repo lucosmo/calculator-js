@@ -9,6 +9,7 @@
 export function CalculatorData(calculator_screen, calculator_history){
   this.screen = calculator_screen;
   this.history = calculator_history;
+  return this;
 }
 
 /**
