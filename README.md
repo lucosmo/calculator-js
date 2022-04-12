@@ -38,6 +38,7 @@ Installing jest
 ```
 npm install --save-dev @babel/plugin-transform-modules-commonjs
 ```
+- install fetch-node
 ### Live:
 https://lucosmo.github.io/calculator-js/
 
