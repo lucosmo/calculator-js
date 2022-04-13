@@ -38,7 +38,11 @@ Installing jest
 ```
 npm install --save-dev @babel/plugin-transform-modules-commonjs
 ```
-- install fetch-node
+- install node-fetch
+```
+npm install node-fetch@2
+```
+I use v2 of node-fetch as new v3 doesn't support commonjs modules
 ### Live:
 https://lucosmo.github.io/calculator-js/
 
