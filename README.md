@@ -43,6 +43,16 @@ npm install --save-dev @babel/plugin-transform-modules-commonjs
 npm install node-fetch@2
 ```
 I use v2 of node-fetch as new v3 doesn't support commonjs modules
+#### Command line instructions:
+- run tests
+```
+npm test
+```
+- run test coverage
+```
+npm coverage
+```
+
 ### Live:
 https://lucosmo.github.io/calculator-js/
 
