@@ -52,7 +52,11 @@ npm test
 ```
 npm coverage
 ```
-
+#### Launch server
+I deploy test version of app using python 3 built-in http server, which I start using command:
+```
+python3 -m http.server
+```
 ### Live:
 https://lucosmo.github.io/calculator-js/
 
