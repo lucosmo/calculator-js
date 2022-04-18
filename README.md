@@ -17,9 +17,9 @@
 - [ ] doing proper history back (use tree structure for this?)
 - [ ] app stoppers working on github pages, need to fix it
 ### Technology stack:
-- HTML
-- CSS
-- Vanilla JavaScript
+- HTML 5
+- CSS 3
+- Vanilla JavaScript ES5
 - Jest as testing tool https://jestjs.io/ working on the top of NodeJS
 - Babel to translate JS code to meet Jest requirements. Jest has problems with ES6 imported/exported modules.
 ### Testing instruction:
