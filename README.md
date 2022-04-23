@@ -48,7 +48,7 @@ I use v2 of node-fetch as new v3 doesn't support commonjs modules
 ```
 npm test
 ```
-- npm test coverage
+- npm test -- --coverage
 ```
 npm coverage
 ```
