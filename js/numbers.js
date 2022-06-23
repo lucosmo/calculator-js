@@ -12,10 +12,12 @@ export function split_screen(calculator_screen){
 }
 
 /**
-* Takes calculator screen and turns it into array of numbers
+* Takes array of numbers from split_screen function 
+* and turns float numbers into array of integer
+* and according floating point position.
 *
 * @param {string} numbers Calculator output (screen)
-* @return {array} array of numbers (integers)
+* @return {array} array of [integers and position of floating points]
 */
 
 export function getNumber(numbers){
