@@ -17,7 +17,7 @@ export function split_screen(calculator_screen){
 * and according floating point position.
 *
 * @param {string} numbers Calculator output (screen)
-* @return {array} array of [integers and position of floating points]
+* @return {array} array of arrays (integers, position of floating points)
 */
 
 export function getNumber(numbers){
