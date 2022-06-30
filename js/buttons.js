@@ -1,6 +1,6 @@
 import {clean_screen, change_sign, calc_evaluation, calc_percent, calc_back} from './button_logic.js';
 import {takeLastNumber, CalculatorData} from './helpers.js';
-import {split_screen} from './numbers.js';
+import {split_screen, getNumber} from './numbers.js';
 
 const btns = document.getElementsByClassName('btn');
 const screen = document.getElementsByClassName('screen')[0];
@@ -23,11 +23,15 @@ Array.from(btns).forEach(child => {
           screen.innerHTML = (change_sign(calculatorData)).screen;
           break;
         case '=':
-          /*console.log(screen.innerHTML);
-          split_screen(screen.innerHTML);*/
+          console.log(screen.innerHTML);
+          console.log(split_screen(screen.innerHTML));
           let output = calc_evaluation(calculatorData,e);
+
           screen.innerHTML = output.screen;
           historyInput = output.history;
+          let numbers = split_screen(screen.innerHTML);
+          //console.log(numbers);
+          getNumber(numbers);
           /*
           historyInput.push(e.target.value);
           console.log(historyInput);
