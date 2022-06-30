@@ -21,9 +21,11 @@ export function split_screen(calculator_screen){
 */
 
 export function getNumber(numbers){
+  let re =/./;
   let array_numbers = [];
   numbers.forEach((element) => {
-
+    let pos = element.search(re);
+    array_numbers = array_numbers.append([element,element.length - pos]);
   });
   return array_numbers;
 }
