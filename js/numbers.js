@@ -12,7 +12,7 @@ export function split_screen(calculator_screen){
 }
 
 /**
-* Takes array of numbers from split_screen function 
+* Takes array of numbers from split_screen function
 * and turns float numbers into array of integer
 * and according floating point position.
 *
@@ -21,5 +21,9 @@ export function split_screen(calculator_screen){
 */
 
 export function getNumber(numbers){
-  return 
+  let array_numbers = [];
+  numbers.forEach((element) => {
+
+  });
+  return array_numbers;
 }
