@@ -30,3 +30,6 @@ export function getNumber(numbers){
   });
   return array_numbers;
 }
+
+export function floatMultiply(num1, num2){
+}
