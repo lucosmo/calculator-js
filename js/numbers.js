@@ -31,6 +31,10 @@ export function getNumber(numbers){
   return array_numbers;
 }
 
+/**
+* Takes 2 arrays containing number and position of comma/dot 
+* of float number and multiply numbers
+*/
 export function floatMultiply(num1, num2){
   return num1[0]*num2[0]/(num1[1]*num2[2]);
 }
