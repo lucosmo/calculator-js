@@ -36,7 +36,7 @@ export function getNumber(numbers){
 * of float number and multiply numbers
 * @param {array} num1 Array containing integer and position of comma/dot
 * @param {array} num2 Array containing integer and position of comma/dot
-* @return {float} product of two floats
+* @return {float} product of two given parameters num1 and num2
 */
 
 export function floatMultiply(num1, num2){
