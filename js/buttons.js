@@ -25,13 +25,14 @@ Array.from(btns).forEach(child => {
         case '=':
           console.log(screen.innerHTML);
           console.log(split_screen(screen.innerHTML));
+          let numbers = split_screen(screen.innerHTML);
           let output = calc_evaluation(calculatorData,e);
 
           screen.innerHTML = output.screen;
           historyInput = output.history;
-          let numbers = split_screen(screen.innerHTML);
+
           //console.log(numbers);
-          getNumber(numbers);
+          console.log(getNumber(numbers));
           /*
           historyInput.push(e.target.value);
           console.log(historyInput);

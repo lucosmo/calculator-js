@@ -32,14 +32,13 @@ export function getNumber(numbers){
 }
 
 /**
-* Takes 2 arrays containing number and position of comma/dot 
+* Takes 2 arrays containing number and position of comma/dot
 * of float number and multiply numbers
-* @param {array} num1 Array containing integer and position of comma/dot
-* @param {array} num2 Array containing integer and position of comma/dot
+* @param {array} num1 Array containing integer - num1[0] and position of comma/dot - num1[1]
+* @param {array} num2 Array containing integer - num2[0] and position of comma/dot - num2[1]
 * @return {float} product of two provided parameters num1 and num2
 */
 
 export function floatMultiply(num1, num2){
   return num1[0]*num2[0]/(num1[1]*num2[2]);
 }
-
