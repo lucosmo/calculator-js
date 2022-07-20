@@ -32,7 +32,7 @@ export function getNumber(numbers){
 }
 
 /**
-* Takes 2 arrays containing number and position of comma/dot
+* Takes 2 arrays (length 2) containing number and position of comma/dot
 * of float number and multiply numbers
 * @param {array} num1 Array containing integer - num1[0] and position of comma/dot - num1[1]
 * @param {array} num2 Array containing integer - num2[0] and position of comma/dot - num2[1]
